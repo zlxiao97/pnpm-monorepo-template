@@ -1,4 +1,4 @@
-name: Build and Deploy VuePress Site
+name: Build and Deploy VitePress Site
 
 # 控制工作流触发的时机
 on:
