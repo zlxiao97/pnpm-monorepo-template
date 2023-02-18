@@ -5,21 +5,21 @@
 - how to use
 
   - install
-  
+
     ```shell
-    npm i
+    pnpm i
     ```
 
   - dev
 
     ```shell
-    npm run dev
+    pnpm dev
     ```
 
   - build
 
     ```shell
-    npm run build
+    pnpm build
     ```
 
 - deps installation
@@ -27,19 +27,19 @@
   - how to install deps for all projects
 
     ```shell
-    npm install package-name -ws
+    pnpm add package-name -r
     ```
 
   - how to install deps for specific project
 
     ```shell
-    npm install package-name -w=@ma/project-name
+    pnpm add package-name -F=@template/project-name
     ```
 
   - how to install deps at root level
 
     ```shell
-    npm install package-name -W
+    pnpm add package-name -w
     ```
 
 ## Folder Structure
@@ -52,27 +52,14 @@
 
   ```shell
   .
-  ├── README.md
-  ├── docs                          // vuepress v2
-  │   ├── docs
-  │   │   └── README.md
-  │   └── package.json
-  ├── domains
-  │   └── finance
-  │       ├── finance-admin-react   // react stack with multiple scenes
-  │       └── finance-admin-vue3    // vue3 stack with multiple scenes
-  ├── package-lock.json
+  ├── apps
+  ├── changelog.config.js         // git-cz configuration file
+  ├── commitlint.config.ts        // commitlint configuration file
+  ├── docs                        // vitepress
+  ├── node_modules
   ├── package.json
-  └── packages                      // shared js libs
-    └── utils
+  ├── packages
+  ├── pnpm-lock.yaml
+  ├── pnpm-workspace.yaml
+  └── README.md
   ```
-
-- how it is organized
-
-  - by domain
-
-    - by solution tech stack
-      - by domain scene / story
-
-  - by documentation
-  - by shared packages
