@@ -1,6 +1,6 @@
-const reactPaths = ['domains/finance/finance-admin-react/src/**/*.{js,ts,jsx,tsx}'];
-const vuePaths = ['domains/finance/finance-admin-vue3/src/**/*.{js,ts,vue}'];
-const miniAppPaths = ['domains/finance/finance-wechat-app/src/**/*.{js}'];
+const reactPaths = ['apps/react/src/**/*.{js,ts,jsx,tsx}'];
+const vuePaths = ['apps/vue/src/**/*.{js,ts,vue}'];
+const miniAppPaths = ['apps/miniapp/miniprogram/**/*.{js}'];
 
 module.exports = {
   parserOptions: {
