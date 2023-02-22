@@ -1,5 +1,6 @@
 {
   "git": {
+    "changelog": "npx auto-changelog --stdout --commit-limit false -u --template .clTemplate.hbs",
     "commitMessage": "🚀 RELEASE: ${version}",
     "commitArgs": [],
     "tag": true,
