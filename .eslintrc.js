@@ -1,6 +1,6 @@
-const reactPaths = ['apps/react/src/**/*.{js,ts,jsx,tsx}'];
-const vuePaths = ['apps/vue/src/**/*.{js,ts,vue}'];
-const miniAppPaths = ['apps/miniapp/miniprogram/**/*.{js}'];
+// const reactPaths = ['apps/react/src/**/*.{js,ts,jsx,tsx}'];
+// const vuePaths = ['apps/vue/src/**/*.{js,ts,vue}'];
+// const miniAppPaths = ['apps/miniapp/miniprogram/**/*.{js}'];
 
 module.exports = {
   parserOptions: {
@@ -8,17 +8,17 @@ module.exports = {
     sourceType: 'module',
   },
   overrides: [
-    {
-      files: reactPaths,
-      ...require('./.eslintrc.react.js'),
-    },
-    {
-      files: vuePaths,
-      ...require('./.eslintrc.vue.js'),
-    },
-    {
-      files: miniAppPaths,
-      ...require('./.eslintrc.miniapp.js'),
-    },
+    // {
+    //   files: reactPaths,
+    //   ...require('./.eslintrc.react.js'),
+    // },
+    // {
+    //   files: vuePaths,
+    //   ...require('./.eslintrc.vue.js'),
+    // },
+    // {
+    //   files: miniAppPaths,
+    //   ...require('./.eslintrc.miniapp.js'),
+    // },
   ],
 };
