@@ -16,6 +16,34 @@
     ### RELEASE: {{title}}{{#if tag}}{{/if}}
   {{/if}}
 
+  {{#if Merges.length}}
+    ### Merges
+  {{/if}}
+
+  {{#commit-list merges heading='![BREAKING](https://img.shields.io/badge/-BREAKING%20CHANGES-gray.svg?colorB=F91800)' message='BREAKING: '}}
+    > {{message}} [`{{commit.shorthash}}`]({{href}}) <br>
+  {{/commit-list}}
+
+  {{#commit-list merges heading='![NEW](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)' message='NEW: '}}
+    > {{message}} [`{{commit.shorthash}}`]({{href}}) <br>
+  {{/commit-list}}
+
+  {{#commit-list merges heading='![IMPROVEMENT](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=239D58)' message='IMPROVE: '}}
+    > {{message}} [`{{commit.shorthash}}`]({{href}}) <br>
+  {{/commit-list}}
+
+  {{#commit-list merges heading='![FIX](https://img.shields.io/badge/-FIX-gray.svg?colorB=E28700)' message='FIX: '}}
+    > {{message}} [`{{commit.shorthash}}`]({{href}}) <br>
+  {{/commit-list}}
+
+  {{#commit-list merges heading='![DOCS](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)' message='DOC:'}}
+   > {{message}} [`{{commit.shorthash}}`]({{href}}) <br>
+  {{/commit-list}}
+
+  {{#if commits.length}}
+    ### Commits
+  {{/if}}
+
   {{#commit-list commits heading='![BREAKING](https://img.shields.io/badge/-BREAKING%20CHANGES-gray.svg?colorB=F91800)' message='BREAKING: '}}
     > {{subject}} [`{{shorthash}}`]({{href}}) <br>
   {{/commit-list}}
