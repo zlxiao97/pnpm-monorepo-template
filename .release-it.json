@@ -13,7 +13,7 @@
     "pushRepo": ""
   },
   "hooks": {
-    "after:bump": "release:changelog"
+    "after:bump": "pnpm release:changelog"
   },
   "npm": {
     "publish": false
