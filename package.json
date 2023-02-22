@@ -12,7 +12,7 @@
     "lint:fix": "eslint --fix .",
     "release": "pnpm release:check && pnpm release:version:packages && pnpm release:version",
     "release:check": "pnpm lint && pnpm build",
-    "release:version:packages": "bump packages/*/package.json",
+    "release:version:packages": "bump -c \"📦 NEW: bump packages version\" packages/*/package.json",
     "release:version": "dotenv release-it --",
     "release:changelog": "auto-changelog && git add CHANGELOG.md"
   },
